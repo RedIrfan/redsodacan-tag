@@ -13,7 +13,7 @@ var hit_list : Array[HurtBox] #for all hurtboxes that entered and has been hit/s
 
 func _ready():
 	set_collision_layer_value(9, true)
-	set_collision_layer_value(10, true)
+	set_collision_mask_value(10, true)
 	
 	area_entered.connect(_on_area_entered)
 
